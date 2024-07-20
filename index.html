@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Resposive NavBar</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>irshad
+                <span>chinkarath</span></h1>
+        </div>
+        <a href="#" class="btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Mens</a></li>
+                <li><a href="#">womens</a></li>
+                <li><a href="#">kids</a></li>
+                <li><a href="#">accessories</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">cart</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const btn=document.getElementsByClassName('btn')[0];
+        const navbar=document.getElementsByClassName('navbar-links')[0];
+
+        btn.addEventListener('click',()=>{
+        navbar.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
